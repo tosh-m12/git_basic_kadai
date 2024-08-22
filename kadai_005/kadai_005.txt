@@ -1,0 +1,49 @@
+PS D:\samurai-terakoya> mkdir git_challenge
+
+
+    Directory: D:\samurai-terakoya
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----         8/22/2024     23:44                git_challenge
+
+
+PS D:\samurai-terakoya> cd git_challenge
+PS D:\samurai-terakoya\git_challenge> git init
+Initialized empty Git repository in D:/samurai-terakoya/git_challenge/.git/
+PS D:\samurai-terakoya\git_challenge> echo "Hello, world!" >>hello_world.txt
+PS D:\samurai-terakoya\git_challenge> git add hello_world.txt
+PS D:\samurai-terakoya\git_challenge> git commit -m 'hello_world.txt   
+PS D:\samurai-terakoya\git_challenge> git status
+On branch main
+
+No commits yet
+  (use "git rm --cached <file>..." to unstage)
+        new file:   hello_world.txt
+
+PS D:\samurai-terakoya\git_challenge> git commit -m 'hello_world.txtを追加'
+[main (root-commit) 0c9c80d] hello_world.txtを追加
+ create mode 100644 hello_world.txt
+PS D:\samurai-terakoya\git_challenge> echo "こんにちは、世界！" >> hello_world.txt
+On branch main
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   hello_world.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+PS D:\samurai-terakoya\git_challenge> git add hello_world.txt
+PS D:\samurai-terakoya\git_challenge> git status
+On branch main
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   hello_world.txt
+
+PS D:\samurai-terakoya\git_challenge> git commit -m '日本語訳を追加'
+[main 4a20b77] 日本語訳を追加
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+PS D:\samurai-terakoya\git_challenge> git log --oneline
+4a20b77 (HEAD -> main) 日本語訳を追加
+0c9c80d hello_world.txtを追加
+PS D:\samurai-terakoya\git_challenge> 
